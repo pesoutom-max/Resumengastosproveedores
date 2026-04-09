@@ -1,0 +1,92 @@
+.expenses-table {
+  width: 100%;
+}
+
+.expenses-table h2 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  max-height: 600px;
+  overflow-y: auto;
+}
+
+.expenses-table table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95em;
+}
+
+.expenses-table table th {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 15px;
+  text-align: left;
+  font-weight: 600;
+  position: sticky;
+  top: 0;
+}
+
+.expenses-table table td {
+  padding: 12px 15px;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.expenses-table table tbody tr {
+  transition: background-color 0.2s ease;
+}
+
+.expenses-table table tbody tr:hover {
+  background: #f8f8f8;
+}
+
+.provider-badge {
+  background: #e8eaff;
+  color: #667eea;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-weight: 500;
+  display: inline-block;
+}
+
+.amount {
+  font-weight: 600;
+  color: #764ba2;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 40px;
+  color: #999;
+  font-style: italic;
+}
+
+.table-info {
+  margin-top: 15px;
+  padding-top: 15px;
+  border-top: 1px solid #e0e0e0;
+  color: #666;
+}
+
+.table-info p {
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .table-wrapper {
+    max-height: 400px;
+  }
+
+  .expenses-table table {
+    font-size: 0.85em;
+  }
+
+  .expenses-table table th,
+  .expenses-table table td {
+    padding: 8px 10px;
+  }
+}
